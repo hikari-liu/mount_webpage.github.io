@@ -1,0 +1,62 @@
+<style>
+body
+{
+   background-image:url(bg.jpg);
+   background-repeat: no-repeat;
+   background-position:center;
+   width: 100%;
+   height: 100%;
+   //background-size: cover;
+}
+#btn
+{
+   position:relative;
+   top:0px;
+   margin:0 auto;
+
+   background-image:url(btn.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+
+   cursor:hand;
+
+   width: 800px;
+   height: 200px;
+   transition:0.5s; 
+-moz-transition:0.5s;
+-webkit-transition:0.5s; 
+-o-transition: 0.5s;
+}
+#btn:hover
+{
+  
+   top:100px;
+   width: 800px;
+   height:200px;
+}
+
+#aa 
+{
+   visibility:hidden;
+}
+</style>
+
+<script language="javascript">
+
+ function playmusic()
+{
+                  aa.play();
+
+ }
+</script>
+
+<body>
+
+<div id="btn" onclick="playmusic()"></div>
+
+
+<audio src="mus.mp3" id="aa" autostart=false>
+
+
+</body>
